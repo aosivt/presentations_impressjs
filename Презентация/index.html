@@ -26,7 +26,7 @@
     </style>
 </head>
 
-<body class="impress-not-supported">
+<div class="impress-not-supported">
 
 <div class="fallback-message">
     <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
@@ -69,6 +69,7 @@
             <div style="text-align: center; font-size: 50%;">
                 Новосибирск, 2016
             </div>
+
         </div>
 
     <!--  Слайд № 3-->
@@ -408,7 +409,11 @@ if ("ontouchstart" in document.documentElement) {
 <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.6.0/katex.min.css"> -->
 <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.6.0/katex.min.js"></script> -->
 <script src="lib/js/impress.js"></script>
-<script>impress().init();</script>
-
+<script src="lib/js/impress-slide-num.js"></script>
+<!--<script>impress().init();</script>-->
+<script>var obj = impress(); obj.init(); initSlideNo(obj);</script>
+    <div id="slide-div" >
+        <p id="slide-text" style="font-size: 80%;"></p>
+    </div>
 </body>
 </html>
